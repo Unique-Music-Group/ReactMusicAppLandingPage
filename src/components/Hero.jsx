@@ -2,6 +2,9 @@ import { React, useState } from "react";
 import DownloadAds from "./DownloadAds";
 import VisibilitySensor from "react-visibility-sensor";
 import { motion } from "framer-motion";
+import './Header.css';
+import dings from "../img/ai.jpg"
+
 
 function Hero() {
   const [elementIsVisible, setElementIsVisible] = useState(false);
@@ -42,40 +45,42 @@ function Hero() {
       onChange={(isVisible) => setElementIsVisible(isVisible)}
       minTopValue={300}
     >
-      <div className="wrapper bg-[#081730] flex items-center justify-between px-[5rem] rounded-b-[5rem] w-[100%] h-[35rem] relative z-[3]">
+      <div className="wrapper bg-[#081730] flex items-center justify-between px-[5rem] rounded-b-[0rem] w-[100%] h-[46rem] relative z-[3]">
         {/* left side */}
         <div className="headings flex flex-col items-start justify-center h-[100%] text-[3rem]">
-          <span>Experience The</span>{" "}
+          <span>Artificial irrElephants</span>{" "}
           <span>
-            <b>Best Qulaity Music</b>
+            <b>NEW EAR MOVIE </b>
           </span>
           <span className="text-[15px] text-[#525D6E]">
-            Donec laoreet nec velit vitae aliquam. Ut quis tincidunt purus.
+            Get your copy of SYQEM's brand new Ear Movie Artificial irrElephants 
             <br />
-            Suspendisse in leo non risus tincidunt lobortis.
+            in the shop of your trust.
           </span>
           {/* download ads */}
           <div>
-            <span className="text-[13px]">Download now on IOS and Android</span>
+            <span className="text-[13px]">OUT ON 30th June 2023</span>
             <DownloadAds />
           </div>
         </div>
         {/* right side */}
-        <div className="images relative w-[50%]">
-          <motion.img
+        <div className="images relative w-[30%] h-[20%]">
+        
+           {/* <motion.img
             variants={bg}
             animate={`${elementIsVisible}`}
             transition={{ duration: 1, type: "ease-out" }}
             src={require("../img/backgraphics.png")}
             alt=""
             className="absolute top-[-8rem] left-[19rem]"
-          />
-          <img
-            src={require("../img/p 1.png")}
+          /> */}
+          <img src={dings}></img>
+          {/*<img
+            src={require("../img/1463.png")}
             alt=""
-            className="absolute top-[-15rem] h-[34rem] left-[13rem]"
-          />
-          <motion.img
+            className="absolute top-[-15rem] h-[34rem] left-[100%]" */}
+          {/* /> */}
+          {/* <motion.img
             variants={musicPlayer}
             animate={`${elementIsVisible}`}
             transition={{
@@ -107,7 +112,7 @@ function Hero() {
             src={require("../img/p 4.png")}
             alt=""
             className="absolute w-[5rem] left-[12.5rem] top-[12rem]"
-          />
+          />   */}
         </div>
       </div>
     </VisibilitySensor>

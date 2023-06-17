@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import VisibilitySensor from "react-visibility-sensor";
 
 
-function Feature({ icon, title }) {
+function Feature({ icon, title, songtitle, icon1 }) {
   const variant={
     true:{
       transform:"scale(1)",
@@ -31,25 +31,26 @@ function Feature({ icon, title }) {
             duration:1,
             type:"ease-out",
           }}
-          animate={`${elementIsVisible}`}
+          // animate={`${elementIsVisible}`}
           className="icon bg-[#081730] rounded-2xl p-4"
         >
           <img
-            src={require(`../img/${icon}.png`)}
+            src={require(`../img/${icon}`)}
             alt=""
-            className="w-[3rem]"
+            className="w-[16rem]"
           />
+          
         </motion.div>
 
         <span className="mt-5">{title}</span>
+        <span className="mt-3">{songtitle}</span>
 
         <span className="text-[#707070] mt-4">
-          Nunc elementum, dolor vitae lacinia pulvinar, augue felis scelerisque
-          libero, sit amet laoreet lorem.
+          Nutze jetzt die Chance und sicher deine Shares an Mazze Wiesner's neuem Album "Für Immer und jetzt". 
         </span>
 
-        <span className="text-[#E600FF] underline mt-[3rem] hover:cursor-pointer">
-          Learn more
+        <span className="text-[#000] underline mt-[2rem] hover:cursor-pointer">
+         Ab {icon1}
         </span>
       </div>
     </VisibilitySensor>

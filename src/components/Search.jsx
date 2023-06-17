@@ -41,14 +41,19 @@ function Search() {
           }}
           src={require("../img/backgraphics.png")}
           alt=""
-          className="absolute top-[15rem] left-[-47rem] z-[0]"
+          className="absolute top-[20rem] left-[-47rem] z-[0]"
         />
         <motion.img
-          src={require("../img/d1.png")}
+        animate={`${elementIsVisible}`}
+        transition={{
+          duration: 1,
+          type: "ease-in",
+        }}
+          src={require("../img/1463.png")}
           alt=""
-          className="w-[16rem] top-[26rem] absolute"
+          className="w-[36rem] top-[28rem] absolute"
         />{" "}
-        <motion.img
+        {/* <motion.img
           src={require("../img/d2.png")}
           alt=""
           className="w-[9rem] absolute top-[32.7rem] left-[7rem]"
@@ -74,7 +79,7 @@ function Search() {
           src={require("../img/d4.png")}
           alt=""
           className="w-[17rem] top-[50rem] left-[2rem] absolute"
-        />
+        /> */}
       </div>
       {/* right side */}
       <div className="right flex items-start flex-col justify-start flex-1 h-[100%] pt-[9rem] z-[40]">
@@ -105,9 +110,9 @@ function Search() {
 
         {/* paragraph */}
         <div className="detail flex flex-col mt-5 text-4xl">
-          <span>Search Music by</span>
+          <span>Suche brandneue Songs nach</span>
           <span>
-            <b>Name or Direct URL</b>
+            <b>Name oder Genre</b>
           </span>
           <span className="text-sm mt-3 text-[#4D586A]">
             Duis feugiat congue metus, ultrices vulputate <br/> nibh viverra

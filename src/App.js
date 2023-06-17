@@ -5,6 +5,8 @@ import Experience from './components/Experience';
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Search from './components/Search';
+import Player from './components/Player';
+import MusicGrid from './components/MusicGrid';
 
 
 function App() {
@@ -13,7 +15,8 @@ function App() {
       <Header/>
       <Hero/>
       <Experience/>
-      <Search/>
+      
+      <MusicGrid />
       <Download/>
       <Footer/>
     </div>

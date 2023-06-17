@@ -1,4 +1,5 @@
 import React from 'react'
+import './MusicPlayer.css';
 
 function MusicPlayer() {
   return (
@@ -9,13 +10,13 @@ function MusicPlayer() {
             <div>
                 <div className="profile flex">
                     <img 
-                    src={require("../img/Mask Group 23.png")}
+                    src={require("../img/mw.jpeg")}
                     alt=""
                     className="w-[2.5rem] h-[2.5rem] border-2 border-white rounded-full"
                     />
                     <div className="details flex flex-col ml-4">
-                        <span className="text-[1rem]">Tristam Bone Dry</span>
-                        <span className="text-sm text-gray-500" >Unknown Artist</span>
+                        <span className="text-[1rem]">Für Immer Und Jetzt</span>
+                        <span className="text-sm text-gray-500" >Mazze Wiesner</span>
                     </div>
                 </div>
             </div>
@@ -38,7 +39,8 @@ function MusicPlayer() {
         {/* Controls */}
         <div className="controls flex-1 flex items-center justify-around">
           {/* previous arrow */}
-          <svg width="10.455" height="12.442" viewBox="0 0 10.455 12.442">
+          
+           <svg width="10.455" height="12.442" viewBox="0 0 10.455 12.442">
             <path
               d="M62.208,5.066,69.119.334A1.687,1.687,0,0,1,70.027,0c.517,0,.836.415.836,1.109V11.334c0,.693-.319,1.107-.835,1.107a1.673,1.673,0,0,1-.9-.335L62.211,7.376A1.419,1.419,0,0,1,61.52,6.22,1.414,1.414,0,0,1,62.208,5.066Z"
               transform="translate(-61.52 0)"
@@ -53,11 +55,13 @@ function MusicPlayer() {
               transform="translate(0.432 0.221)"
               fill="#4b537b"
             />
-          </svg>
+          </svg> 
+          
+           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#4b537b" class="bi bi-play-circle" viewBox="0 0 16 16" id="IconChangeColor"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" id="mainIconPathAttribute"></path> <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" id="mainIconPathAttribute"></path> </svg>
           {/* pauseButton */}
           <div className="pauseButton flex items-center relative">
             {/* cicrle */}
-            <svg width="40" height="40" viewBox="0 0 40 40">
+            {/* <svg width="40" height="40" viewBox="0 0 40 40">
               <defs>
                 <linearGradient
                   id="linear-gradient"
@@ -77,7 +81,7 @@ function MusicPlayer() {
                 transform="translate(2038 1055)"
                 fill="url(#linear-gradient)"
               />
-            </svg>
+            </svg> */}
             {/* pause */}
             <svg
               width="12.327"
@@ -119,6 +123,7 @@ function MusicPlayer() {
             </svg>
           </div>
           {/* next arrow */}
+          <div className="pauseButton1 flex items-center relative">
           <svg width="10.455" height="12.442" viewBox="0 0 10.455 12.442">
             <path
               id="Path_3"
@@ -137,6 +142,7 @@ function MusicPlayer() {
               fill="#4b537b"
             />
           </svg>
+          </div>
         </div>
       </div>
     </div>
