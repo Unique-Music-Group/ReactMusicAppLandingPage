@@ -571,7 +571,6 @@ function MusicGrid(){
                   </p>
                 </div>
 
-
                 <div class="tes">
                   <Waveformneu source={rsn} />
                 </div>
