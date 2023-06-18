@@ -586,7 +586,7 @@ function MusicGrid(){
 
                 </div>
                 <div>
-                <HiDownload/>
+                 <HiDownload/>
                 </div>
               </div>
             </div>
